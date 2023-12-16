@@ -1,0 +1,393 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+/* background image of navbar  */
+#navbar::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+}
+.navbtn{
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.navbtn:hover{
+    color: black;
+    background-color: rgb(188, 174, 222);
+    transition: 0.5s;
+    box-shadow: 0 0 18px white;
+}
+
+/* Navigation Bar: logo */
+#logo{
+    height: 59px;
+    padding: 14px 18px;
+}
+
+/* intro section  */
+#Intro{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.introelement{
+    /* border: 2px solid black; */
+    padding: 1rem;
+    margin: 0.3rem;
+    /* width: 50%; */
+    /* height: 50vh; */
+}
+/* Left side designing */
+
+#Coverpage{
+    display: flex;
+    padding: 19rem 1rem;
+    color: black;
+    justify-content: center;
+}
+
+#Intro::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 10px;
+    background:url('books_on_shelves.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+    z-index: -1;
+    height: 100vh;
+    padding: 10px;
+    margin: 0px 0px 0px -11px;
+    width: 100%;
+}
+
+/* Text written in left side designing */
+#logoandh1{
+    display: flex;
+}
+#container_text_coverpage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: -8rem;
+    /* width:90%; */
+    background-color: rgb(255, 255, 255,0.6);
+    border-radius: 48px;
+    
+}
+#coverpagelogo{
+    height: 59px;
+    padding: 20px 2px 9px 25px;
+    opacity: 1;
+}
+#pagename{
+    padding: 10px 9px 14px 5px;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: 'Caveat', cursive;
+}
+#subtitle{
+    font-family: 'Kalnia', serif;
+    padding: 10px 9px 20px 5px;
+}
+/* styling the button */
+.button{
+    padding: 1rem 0rem 2.4rem 0rem;
+}
+#button{
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #2e37ae;
+    border: 2px solid #2e37ae;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#button:hover{
+    color: #2e37ae;
+    background-color: #79e2ee;
+    transition: 0.5s;
+    box-shadow: 0 0 18px black;
+}
+ 
+/* designing the right side */
+.textofintroelement{
+    padding: 2rem;
+    /* border: 2px solid red; */
+    /* background-color: white; */
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Alegreya', serif;
+    font-size: 1.5rem;
+    border-radius: 48px;
+    background-color: rgb(255, 255, 255,0.7);
+    }
+.textofintroelement{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* top: -8rem; */
+    /* width:90% */
+}
+
+/* Best selling section */
+
+/* designing the h1 tags */
+#Best_Selling h1{
+    font: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Balthazar', serif;
+}
+#Best_Selling h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+    padding-bottom: 23px;
+}
+
+/* designing the cards */
+.card{
+    display: flex;
+    flex-direction: column;
+}
+#cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card img{
+    height: 500px;
+    border: solid 2px transparent;
+    border-radius: 25px;
+    box-shadow: 3px 3px 11px black;
+    transition: 0.5s;
+}
+.price{
+    position: relative;
+    top: -46px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid rgb(83, 168, 182);
+    background-color: rgb(83, 168, 182,0.5);
+    border-radius: 50px;
+    font: bold;
+}
+.buybtn{
+    position: relative;
+    top: -48px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px solid #f70776; 
+    background-color:rgb(247, 7, 118,0.5); 
+    border-radius: 50px;
+    font: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    /* box-shadow: 7px 7px 6px #9896f1; */
+}
+/* know more styling */
+.img_km{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.know_more{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: -17rem;
+    border: 2px solid transparent;
+    width: 170px;
+    font-size: 2rem;
+    padding: 18px;
+    background-color: #352f44;
+    color: white;
+    font-family: 'Balthazar', serif;
+    box-shadow: 3px 3px 3px rgb(255, 255, 255),3px 3px 3px rgb(255, 255, 255) inset;
+    border-radius: 25px;
+    visibility: hidden;
+    z-index: 12;
+    cursor: pointer;
+}
+.img_km:hover .know_more{
+    transition: 0.5s;
+    visibility: visible;
+}
+.img_km img:hover{
+    transition: 0.5s;
+    box-shadow: 20px 20px 30px black;
+}
+.buybtn:hover{
+    border: 2px solid #9896f1;
+    border-radius: 50px;
+    background-color: #9896f1;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0 0 24px black;
+}
+
+/* Designing the Recomendation secn  */
+#Recommendation h1{
+    font: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Balthazar', serif;
+}
+#Recommendation h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+    padding-bottom: 23px;
+}
+
+/* styling the recomendation cards */
+.r_cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.r_card img{
+    height: 500px;
+    border: solid 2px transparent;
+    border-radius: 25px;
+    box-shadow: 0px 0px 33px black;
+    margin-bottom: 59px;
+}
+
+/* styling the review section  */
+#Reviewh1{
+    font: bold;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Balthazar', serif;
+}
+#Review{
+    display: flex;
+}
+.Review{
+    width: 50%;
+    height: 100vh;
+}
+#reviewposted h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Balthazar', serif;
+    padding-bottom: 23px;
+}
+#review1,#review2,#review3{
+    /* border: 2px solid red; */
+    margin: 1rem;
+    /* border-radius: 100px; */
+
+}
+.reviewername{
+    background-color: rgb(247, 7, 118,0.5);
+    padding: 2rem;
+    border-radius: 50px;
+}
+.reviewmsg{
+    background-color: rgb(152, 150, 241,0.5);
+    border-radius: 50px;
+    padding: 2rem;
+}
+.reviewername h4{
+    font-size: 1.5rem;
+}
+.reviewmsg p{
+    font-size: 1.5rem;
+}
+/* styling the review form */
+fieldset{
+    margin-left: 88px;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    /* width: 42rem;
+    height: 28rem; */
+    background-color: rgb(53, 47, 68,0.5);
+    border-radius: 25px;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+legend{
+    align-items: center;
+    margin-left: 130px;
+    padding: 24px;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    background-color: rgb(46, 55, 174);
+    border-radius: 25px;
+    color: white;
+}
+.inputs p{
+    font-size: 2rem;
+    padding: 10px;
+}
+.inputs input{
+    margin-left: 25px;
+    width: 32rem;
+    border-radius: 10px
+}
+input{
+    padding-left:20px ;
+    font-size: 1rem;
+}
+.clear_submit{
+    justify-content: center;
+    align-items: center;
+    padding-left:25px ;
+    /* padding: 2px; */
+    justify-content: space-between;
+}
+.btn{
+    font-size: 1.5rem;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+.center{
+    text-align: center;
+    background-color: black;
+    color: wheat;
+}
